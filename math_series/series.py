@@ -4,6 +4,7 @@ def fibonacci_series(n):
     this function will take number and do fibonacci series on it
 
     Arg[number]
+
     output => summation based on fibonacci series
     """
     if n<0:
@@ -23,15 +24,22 @@ def fibonacci_series(n):
 
 
 def lucas_numbers(n):
-#    print("x")
-   if n<0:
-       return "enter positive number"
-   elif n==0:
-        return 2
-   elif n==1:
-       return 1
-   else:
-        return(lucas_numbers(n-1)+ lucas_numbers(n-2))
+    """
+    this function will take number and do lucas series on it
+
+    Arg[number]
+    
+    output => summation based on lucas series
+    """
+
+    if n<0:
+        return "enter positive number"
+    elif n==0:
+            return 2
+    elif n==1:
+        return 1
+    else:
+            return(lucas_numbers(n-1)+ lucas_numbers(n-2))
 
 # print(lucas_numbers(8))
     
