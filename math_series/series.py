@@ -1,5 +1,11 @@
 
 def fibonacci_series(n):
+    """
+    this function will take number and do fibonacci series on it
+
+    Arg[number]
+    output => summation based on fibonacci series
+    """
     if n<0:
        return "enter positive number"
     elif n==0:
