@@ -34,3 +34,17 @@ def lucas_numbers(n):
 
 
 
+def sum_series(n,first=0,second=1):
+#    print(first)
+   if n<0:
+       return "enter positive number"
+   elif n==0:
+        return first
+   elif n==1:
+       return second
+   else:
+        return(sum_series(n-1,first,second)+sum_series(n-2,first,second))
+    
+
+print(sum_series(7,0,1))
+    
